@@ -11,6 +11,5 @@ authorized redirect URI on the Google OAuth client. The source of truth is
 second-state/omuse.
 
 ## Other pages
-- [`home.html`](https://second-state.github.io/omuse-oauth/home.html) — OMuse's application home page (Google's Branding form).
-- [`privacy.html`](https://second-state.github.io/omuse-oauth/privacy.html) — privacy policy.
-- [`terms.html`](https://second-state.github.io/omuse-oauth/terms.html) — terms of service.
+OMuse's home page, privacy policy and terms of service are at https://bytefuture.ai/omuse/. The old copies here
+(`home.html`, `privacy.html`, `terms.html`) only redirect there.
