@@ -9,3 +9,8 @@ Published with GitHub Pages at https://second-state.github.io/omuse-oauth/ — r
 authorized redirect URI on the Google OAuth client. The source of truth is
 [`deploy/oauth-relay/index.html`](https://github.com/second-state/omuse/blob/main/deploy/oauth-relay/index.html) in
 second-state/omuse.
+
+## Other pages
+- [`home.html`](https://second-state.github.io/omuse-oauth/home.html) — OMuse's application home page (Google's Branding form).
+- [`privacy.html`](https://second-state.github.io/omuse-oauth/privacy.html) — privacy policy.
+- [`terms.html`](https://second-state.github.io/omuse-oauth/terms.html) — terms of service.

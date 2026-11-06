@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OMuse Privacy Policy</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header><div class="in">
+  <a class="brand" href="home.html">OMuse</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="https://github.com/second-state/omuse">Source code</a>
+</div></header>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">OMuse, by Second State · Effective 6 November 2026</p>
+
+  <div class="box"><b>In short:</b> OMuse runs on your own server and keeps your data there. Second State keeps only
+  the email address you registered with. We do not collect, store, sell or use the content of your email, calendar,
+  files, chats or any other data your OMuse handles, and we never receive your Google data or tokens.</div>
+
+  <h2>1. Who we are and what this covers</h2>
+  <p>This policy is from Second State ("we", "us") and covers OMuse, the personal AI assistant, and the web pages at
+  <code>second-state.github.io/omuse-oauth/</code> that OMuse uses for Google sign-in. OMuse is open-source software
+  (<a href="https://github.com/second-state/omuse">github.com/second-state/omuse</a>). Each OMuse installation runs on a
+  server dedicated to one user — a computer you run yourself, or a server set up for you alone ("your server").</p>
+
+  <h2>2. What Second State keeps: your registration email only</h2>
+  <p>When you register for OMuse, we keep the email address you register with. We use it only to provide your OMuse
+  service: to identify your account, to send you service messages (setup, security, billing and changes to these
+  terms) and to answer you when you write to us. If you pay for OMuse, the payment is handled by our payment processor
+  (Stripe); we do not store your card number.</p>
+  <p>We keep no other customer data. We do not retain or use the content of your messages, your email, your calendar,
+  your files, your profile, your memory or anything else your OMuse server handles.</p>
+
+  <h2>3. Where your data is: your own server</h2>
+  <p>Everything OMuse works with — your chats, your profile and memory, the files you upload, the reports it makes, and
+  the access tokens of the accounts you connect — is stored on your server. Passwords, tokens and other secrets are
+  kept encrypted in that server's vault. The AI agent on the server never sees your tokens; it asks the server's
+  security layer (Sentinel) to act, and the security layer asks your approval for anything that sends, posts, pays or
+  deletes.</p>
+
+  <h2>4. Google user data</h2>
+  <p>If you connect Google Calendar or Google Drive, OMuse requests these permissions:</p>
+  <ul>
+    <li><code>openid</code> and <code>email</code>: your Google account's email address, to show which account is
+      connected.</li>
+    <li><code>https://www.googleapis.com/auth/calendar.events</code> and
+      <code>https://www.googleapis.com/auth/calendar.readonly</code>: to read your events, your calendar's time zone and
+      free/busy times, and to add, change or cancel events when you ask OMuse to (changes and invitations ask for your
+      approval first).</li>
+    <li><code>https://www.googleapis.com/auth/drive.file</code>: only the files you pick in OMuse's Google Drive picker
+      and the files OMuse creates in your Drive. OMuse cannot see any other file in your Drive.</li>
+  </ul>
+  <p><b>How it is accessed and stored.</b> When you approve access on Google's page, Google sends a one-time code to
+  our sign-in relay page, which runs in your browser, asks you to confirm your server's address and passes the code to
+  that server. The relay page stores nothing. Your server exchanges the code for tokens directly with Google and keeps
+  them encrypted in its vault. Your Google data is read by your server, when you ask for something that needs it, and
+  is not sent to Second State.</p>
+  <p><b>How it is used.</b> Only to provide the features you use: answering your questions about your schedule,
+  finding free time, preparing your daily plan ("What's next"), adding or changing events you ask for, and working
+  with the Drive files you pick or that OMuse makes for you. To answer you, your server may send the relevant parts of
+  that data (for example today's events) to the AI model provider it is set up with — see section 5.</p>
+  <p><b>What we never do.</b> We do not sell Google user data; we do not use it for advertising; we do not use it to
+  develop, improve or train generalized AI or machine-learning models; and no person reads it, except where you ask us
+  to help with your own server and give your consent, where it is needed for security, or where the law requires it.</p>
+  <p>OMuse's use and transfer of information received from Google APIs to any other app will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>5. Services your server works with</h2>
+  <p>To do what you ask, your server sends data to the services it is connected to — chosen by you, or set up for you
+  as part of your server — and their own terms and privacy policies apply:</p>
+  <ul>
+    <li><b>The AI model provider</b> your server uses (for example an OpenAI-compatible API): the request and the data
+      needed to answer it.</li>
+    <li><b>The accounts you connect</b>: your mailbox (IMAP/SMTP), Google Calendar and Drive, Notion, Slack, Telegram
+      and others.</li>
+    <li><b>Search and travel data services</b> (for example web search, flight and hotel search) and the websites OMuse
+      opens for you, such as an airline's or a government's form.</li>
+  </ul>
+  <p>Second State does not receive this data.</p>
+
+  <h2>6. Your choices and deleting your data</h2>
+  <ul>
+    <li><b>Disconnect an account</b> in OMuse under Connections: the account's tokens are deleted from your server.</li>
+    <li><b>Revoke OMuse's Google access</b> at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><b>Delete your data on your server</b>: in OMuse (chats, memory, files, the vault) or by deleting the server's
+      data.</li>
+    <li><b>Delete your registration email</b> with us by asking us (section 9). We delete it, except where the law
+      requires us to keep billing records.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>Secrets on your server are encrypted at rest; a Google sign-in carries a one-time state that your server checks,
+  the sign-in through the relay page also uses PKCE, and the relay page asks you to confirm where your sign-in goes. No system is perfectly secure; please keep your server's
+  password private and your server up to date.</p>
+
+  <h2>8. Children</h2>
+  <p>OMuse is not intended for children under 16, and we do not knowingly register them.</p>
+
+  <h2>9. Contact and changes</h2>
+  <p>Questions or requests: open an issue at
+  <a href="https://github.com/second-state/omuse/issues">github.com/second-state/omuse/issues</a> or write to us from
+  your registered email address. If we change this policy, we post the new version here with its effective date and,
+  for important changes, tell you by email.</p>
+</main>
+<footer><div class="in">© Second State · <a href="home.html">OMuse</a> · <a href="terms.html">Terms of service</a></div></footer>
+</body>
+</html>
